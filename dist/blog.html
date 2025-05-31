@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog Hormonas y Conducta</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+
+  <main class="blog-container">
+    <div class="post-list">
+      <a href="blog/entrada_1.html" class="post-link">🧬 Preprocesamiento PDB</a>
+      <a href="blog/entrada_2.html" class="post-link">🧪 Simulación con GROMACS</a>
+      <a href="blog/entrada_3.html" class="post-link">📊 Análisis ADME</a>
+    </div>
+
+
+    <section id="post-content" class="markdown hidden slide-in"></section>
+  </main>
+
+  <div data-include="components/footer.html"></div>
+
+  <script src="js/include.js"></script>
+  <script src="js/blog_loader.js"></script>
+</body>
+</html>
