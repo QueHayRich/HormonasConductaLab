@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Análisis ADME de compuestos</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div data-include="../components/header.html"></div>
+
+  <main class="markdown">
+    <a href="../blog.html" class="back-link">← Volver al blog</a>
+    <h1>Análisis ADME de compuestos</h1>
+    <div id="contenido-post"></div>
+  </main>
+
+  <div data-include="../components/footer.html"></div>
+
+  <script>
+    fetch('../posts/entrada_3.md')
+      .then(res => res.text())
+      .then(md => {
+        document.getElementById('contenido-post').innerHTML = marked.parse(md);
+      });
+  </script>
+  <script src="../js/include.js"></script>
+</body>
+</html>
