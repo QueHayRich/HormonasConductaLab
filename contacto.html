@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Laboratorio de Hormonas y Conducta</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- EmailJS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init(''); // Clave removida por seguridad
+  </script> -->
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+
+  <main class="contact-container">
+    <section class="contact-hero">
+      <h1 class="contact-title">¡Contáctanos!</h1>
+      <p class="contact-subtitle">Estamos aquí para responder tus preguntas sobre investigación, colaboraciones y más</p>
+    </section>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <h2>🧬 Nuestro Laboratorio</h2>
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <h3>Ubicación</h3>
+            <p>Escuela Nacional de Ciencias Biológicas<br>Instituto Politécnico Nacional</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">🔬</div>
+          <div>
+            <h3>Áreas de Investigación</h3>
+            <p>Hormonas y Conducta<br>Neurociencias Moleculares<br>Análisis Bioquímicos</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">🤝</div>
+          <div>
+            <h3>Colaboraciones</h3>
+            <p>Abiertos a colaboraciones académicas<br>y proyectos de investigación</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <h2>Envíanos un mensaje</h2>
+        
+        <div class="form-group">
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="institucion">Institución / Universidad</label>
+          <input type="text" id="institucion" name="institucion">
+        </div>
+
+        <div class="form-group">
+          <label for="asunto">Asunto *</label>
+          <select id="asunto" name="asunto" required>
+            <option value="">Selecciona un tema</option>
+            <option value="investigacion">Consulta sobre investigación</option>
+            <option value="colaboracion">Propuesta de colaboración</option>
+            <option value="estudiante">Información para estudiantes</option>
+            <option value="recursos">Acceso a recursos</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje *</label>
+          <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <span class="btn-text">Enviar Mensaje</span>
+          <span class="btn-icon">📧</span>
+        </button>
+
+        <div id="form-status" class="form-status"></div>
+      </form>
+    </div>
+  </main>
+
+  <div data-include="components/footer.html"></div>
+  <script src="js/include.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

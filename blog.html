@@ -11,13 +11,15 @@
 
   <main class="blog-container">
     <div class="post-list">
-      <a href="blog/entrada_1.html" class="post-link">🧬 Preprocesamiento PDB</a>
-      <a href="blog/entrada_2.html" class="post-link">🧪 Simulación con GROMACS</a>
-      <a href="blog/entrada_3.html" class="post-link">📊 Análisis ADME</a>
+      <button onclick="loadPost('entrada_1')">🧬 Preprocesamiento PDB</button>
+      <button onclick="loadPost('entrada_2')">🧪 Simulación con GROMACS</button>
+      <button onclick="loadPost('entrada_3')">📊 Análisis ADME</button>
     </div>
 
-
-    <section id="post-content" class="markdown hidden slide-in"></section>
+    <section id="post-content" class="markdown">
+      <h2>Selecciona un artículo</h2>
+      <p>Haz clic en uno de los botones de la izquierda para ver el contenido del artículo.</p>
+    </section>
   </main>
 
   <div data-include="components/footer.html"></div>
