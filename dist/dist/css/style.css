@@ -1,0 +1,289 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  color: #111827;
+}
+header {
+  background-color: #1f2937;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+nav ul li a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+main {
+  padding: 2rem;
+}
+.portada {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 2rem;
+}
+footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.centrado {
+  text-align: center;
+  padding: 2rem;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in forwards;
+  opacity: 0;
+}
+
+.slide-in {
+  animation: slideIn 1.5s ease-out forwards;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.recursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.recurso-item {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.recurso-item:hover {
+  transform: translateY(-5px);
+}
+
+.recurso-item a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.recurso-item p {
+  margin: 0.5rem 0;
+}
+
+.icono {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pdf {
+  color: #c53030;
+  background-color: #ffe5e5;
+}
+
+.zip {
+  color: #2b6cb0;
+  background-color: #e6f0ff;
+}
+
+.jpg {
+  color: #319795;
+  background-color: #e0f7f7;
+}
+.markdown {
+  max-width: 1500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  background-color: #fff;
+  color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.markdown h1, .markdown h2, .markdown h3 {
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #2c5282;
+}
+
+.markdown h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.markdown h2 {
+  font-size: 1.5rem;
+}
+
+.markdown h3 {
+  font-size: 1.2rem;
+}
+
+.markdown p {
+  margin: 1rem 0;
+}
+
+.markdown code {
+  background: #f1f1f1;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.markdown pre {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  white-space: pre-wrap;
+  tab-size: 4;
+}
+
+.markdown pre code {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background: none;
+  font-family: monospace;
+  white-space: pre;
+}
+
+.markdown a {
+  color: #3182ce;
+  text-decoration: underline;
+}
+
+.markdown ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+.blog-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.post-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.post-list button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 220px;              /* 👈 Reducción del ancho */
+  text-align: left;          /* 👈 Alinear texto a la izquierda */
+  border-radius: 6px;
+}
+
+.post-list button:hover {
+  background: #e2e8f0;
+}
+
+#post-content {
+  flex: 3;
+  max-width: 800px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Animaciones */
+.hidden {
+  display: none;
+}
+.slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #2c5282;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.back-link:hover {
+  color: #1a202c;
+  text-decoration: underline;
+}
+
+.post-link {
+  display: block;
+  padding: 0.75rem;
+  margin: 0.5rem auto;
+  width: 240px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  color: #222;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  transition: background 0.3s;
+  font-weight: 500;
+}
+.post-link:hover {
+  background: #e2e8f0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #2c5282;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.back-link:hover {
+  color: #1a202c;
+  text-decoration: underline;
+}
